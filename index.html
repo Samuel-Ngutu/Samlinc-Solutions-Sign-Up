@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Samlinc Solutions</title>
+  <style>
+    /* Reset default margin and padding */
+    body, h1, p {
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Main container */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    
+    /* Header */
+    header {
+      text-align: center;
+      padding: 20px 0;
+    }
+    
+    /* Navigation menu */
+    nav {
+      background-color: #333;
+      text-align: center;
+      padding: 10px;
+    }
+    
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+    
+    /* Main content */
+    main {
+      margin-top: 20px;
+    }
+    
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .content {
+      background-color: #ffffff;
+      padding: 20px;
+    }
+    
+    #Home {
+      background-color: #ffd700;
+    }
+    
+    #About-Us {
+      background-color: #00bfff;
+    }
+    
+    #Our-Services {
+      background-color: #ff69b4;
+    }
+
+    #Contact-Us {
+      background-color: #e9d7e0;
+    }
+
+    /* Login and Signup forms */
+    .login-form, .signup-form {
+      display: none;
+      background-color: #ffcbcb;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .form-title {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #535252;
+      border-radius: 3px;
+    }
+
+    .form-group input[type="submit"] {
+      background-color: #f70d0d;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function showSignupForm() {
+      var signupForm = document.querySelector('.signup-form');
+      signupForm.style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>SAMLINC SOLUTIONS</h1>
+    </header>
+    
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+    
+    <main>
+      <h2>Home</h2>
+      <p>Your go-to Graphic Design, Digital Marketing, SEO, Software, and Web Development Agency, aimed at giving you a unique and memorable Brand Identity.</p>
+      
+      <h2>About Us</h2>
+      <p>Samlinc Solutions is a Digital Solutions Agency based in Kenya, and is aimed at providing digital solutions to its customers through curated strategies.</p>
+      
+      <h2>Our Services</h2>
+      <ul>
+        <li>Web Design</li>
+        <li>Web Development</li>
+        <li>Graphic Design</li>
+        <li>Digital Marketing</li>
+      </ul>
+      
+      <h2>Contact Us</h2>
+      <p>Email: samlincsolutions@gmail.com</p>
+      <p>Phone: +254711891660</p>
+
+      <div class="login-form">
+        <h3 class="form-title">Login</h3>
+        <form action="login.php" method="post">
+          <div class="form-group">
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" name="login-email" required>
+          </div>
+          <div class="form-group">
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="login-password" required>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Login">
+          </div>
+        </form>
+      </div>
+
+      <div class="signup-form">
+        <h3 class="form-title">Sign Up</h3>
+        <form action="signup.php" method="post">
+          <div class="form-group">
+            <label for="signup-name">Name:</label>
+            <input type="text" id="signup-name" name="signup-name" required>
+          </div>
+          <div class="form-group">
+            <label for="signup-email">Email:</label>
+            <input type="email" id="signup-email" name="signup-email" required>
+          </div>
+          <div class="form-group">
+            <label for="signup-password">Password:</label>
+            <input type="password" id="signup-password" name="signup-password" required>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Sign Up">
+          </div>
+        </form>
+      </div>
+
+      <button onclick="showSignupForm()">Sign Up</button>
+    </main>
+    
+    <footer>
+      &copy; 2023 Samlinc Solutions. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
